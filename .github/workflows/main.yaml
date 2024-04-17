@@ -27,7 +27,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GH_TOKEN }}
-          folder: portfolio/dist/browser
+          folder: /dist/browser
           branch: release
           git-config-name: vidyavihap
           git-config-email: vidyap1004@gmail.com
