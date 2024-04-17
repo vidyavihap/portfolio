@@ -25,6 +25,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: portfolio/dist/browser
-          BASE_BRANCH: main
           branch: release
           token: ${{ secrets.GH_TOKEN }}
