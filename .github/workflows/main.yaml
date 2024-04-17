@@ -28,5 +28,5 @@ jobs:
       - name: Deploy to GitHub Pages
         run: npx portfolio --dir=portfolio/dist/browser
         with:
-          branch: main
-          token: ${{ secrets.GH_TOKEN }}
+          CI: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
