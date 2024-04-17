@@ -22,7 +22,7 @@ jobs:
         run: npm install && npm run build:prod
 
       - name: Deploy to GitHub Pages
-        uses: /portfolio/actions@v4
+        uses: portfolio/
         with:
           folder: portfolio/dist/browser
           BASE_BRANCH: main
