@@ -22,8 +22,8 @@ jobs:
         run: npm install && npm run build:prod
 
       - name: Deploy to GitHub Pages
-        uses: vidyavihap/portfolio
+        uses: vidyavihap.github.io/portfolio/
         with:
           folder: portfolio/dist/browser
           branch: main 
-          token: ${{ secrets.GH_Token }}
+          token: ${{ secrets.GH_TOKEN }}
