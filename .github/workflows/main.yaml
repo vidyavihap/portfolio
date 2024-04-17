@@ -26,7 +26,7 @@ jobs:
         run: npm run build:prod
 
       - name: Deploy to GitHub Pages
+        run: npx portfolio --dir=portfolio/dist/browser
         with:
-          folder: portfolio/dist/browser
           branch: main
           token: ${{ secrets.GH_TOKEN }}
