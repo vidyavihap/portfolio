@@ -22,7 +22,7 @@ jobs:
         run: npm install && npm run build:prod
 
       - name: Deploy to GitHub Pages
-        uses: vidyavihap.github.io/portfolio/actions@v4
+        uses: /portfolio/actions@v4
         with:
           folder: portfolio/dist/browser
           BASE_BRANCH: main
