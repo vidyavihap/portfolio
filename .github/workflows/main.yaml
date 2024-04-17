@@ -26,8 +26,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          personal_token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           folder: portfolio/dist/browser
-          enable_jekyll: true
-          user_name: vidyavihap
-          user_email: vidyap1004@gmail.com
+          branch: release
+          git-config-name: vidyavihap
+          git-config-email: vidyap1004@gmail.com
