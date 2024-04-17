@@ -15,14 +15,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 21
 
       - name: Build Angular app to prod
         working-directory: portfolio
         run: npm install && npm run build:prod
 
       - name: Deploy to GitHub Pages
-        uses: portfolio/
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: portfolio/dist/browser
           BASE_BRANCH: main
