@@ -28,3 +28,4 @@ jobs:
         with:
           folder: ./dist/browser
           token: ${{ secrets.GH_TOKEN }}
+          branch: release
