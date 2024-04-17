@@ -30,3 +30,4 @@ jobs:
           publish_dir: portfolio/dist/browser
           enable_jekyll: true
           user_name: vidyavihap
+          user_email: vidyap1004@gmail.com
