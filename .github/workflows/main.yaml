@@ -22,7 +22,6 @@ jobs:
         run: npm install
 
       - name: Build Angular app to prod
-        working-directory: portfolio
         run: npm run build:prod
 
       - name: Deploy to GitHub Pages
